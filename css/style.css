@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Import Fonts & All CSS */
 @import 'css/default-assets/hkgrotesk-fonts.css';
 @import 'css/bootstrap.min.css';
@@ -6,4 +7,163 @@
 @import 'css/owl.carousel.min.css';
 @import 'css/magnific-popup.css';
 @import 'css/default-assets/audioplayer.css';
-@import 'css/font-awesome.min.css';/*# sourceMappingURL=style.css.map */
+@import 'css/font-awesome.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+body {
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgb(28, 25, 25);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  padding-left: 7%;
+  padding-right: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+header .burgeur {
+  display: none;
+  color: white;
+}
+header h1 {
+  font-family: "Aboreto", cursive;
+  display: block;
+  padding: 20px;
+}
+header h1 .logo {
+  -moz-user-select: none;
+  /* Firefox */
+  -webkit-user-select: none;
+  /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none;
+  /* Internet explorer depuis la version 10 et Edge */
+  user-select: none;
+  /* Propriété standard */
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(251, 251, 251);
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+  transition: all 0.2s ease-in-out;
+}
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+header .navbar ul li:focus-within > ul {
+  display: initial;
+}
+header .navbar ul li a {
+  font-size: 15px;
+  padding: 30px;
+  color: #eee;
+  display: block;
+  transition: all 0.1s ease-in-out;
+}
+header .navbar ul li a:hover {
+  background: #333;
+  color: gray;
+}
+header .navbar ul li ul {
+  position: absolute;
+  width: 200px;
+  background: #fff;
+  left: 0;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid gray;
+}
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0px;
+}
+header #menu-bar {
+  display: none;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(28, 25, 25);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+  }
+  header .navbar ul li ul li {
+    background: #eee;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0px;
+  }
+  header label {
+    display: initial;
+  }
+  header nav.ShowNavigation {
+    display: initial;
+    transition: all 0.3s ease-in-out;
+  }
+  header .burgeur {
+    display: initial;
+    position: absolute;
+    right: 0;
+    padding-right: 7%;
+  }
+  header .burgeur i {
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+  header .burgeur .OpenMenu.show {
+    display: block;
+  }
+  header .burgeur .OpenMenu.hide {
+    display: none;
+  }
+  header .burgeur .CancelMenu.show {
+    display: block;
+  }
+  header .burgeur .CancelMenu.hide {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

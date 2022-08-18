@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+header {
+
+    .burgeur {
+        display: none;
+        color: white;
+    }
+
+    // height:80px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    background: rgb(28, 25, 25);
+
+    box-shadow: 0 5px rgba(0, 0, 0, .1);
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 1000;
+
+    h1 {
+        font-family: 'Aboreto', cursive;
+
+        display: block;
+        padding: 20px;
+        // background: rgb(218, 20, 20);
+
+        span {}
+
+        .logo {
+
+            -moz-user-select: none;
+                /* Firefox */
+                -webkit-user-select: none;
+                /* Chrome, Safari, Opéra depuis la version 15 */
+                -ms-user-select: none;
+                /* Internet explorer depuis la version 10 et Edge */
+                user-select: none;
+                /* Propriété standard */
+
+
+            font-weight: bolder;
+            font-size: 25px;
+            color: rgb(251, 251, 251);
+
+        }
+
+    }
+
+
+
+    .navbar {
+
+        ul {
+            list-style: none;
+
+            li {
+                position: relative;
+                float: left;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    >ul {
+
+                        display: initial;
+
+                    }
+                }
+
+                &:focus-within {
+                    >ul {
+                        display: initial;
+                    }
+                }
+
+                a {
+
+                    font-size: 15px;
+                    padding: 30px;
+                    color: #eee;
+                    display: block;
+                    transition: all .1s ease-in-out;
+
+                    &:hover {
+                        background: #333;
+                        color: gray;
+
+                    }
+                }
+
+                ul {
+
+                    position: absolute;
+                    width: 200px;
+                    background: #fff;
+                    left: 0;
+                    display: none;
+
+                    li {
+                        width: 100%;
+                        border-top: 1px solid gray;
+
+                        ul {
+                            left: 200px;
+                            top: 0px;
+                        }
+                    }
+
+                }
+
+
+            }
+
+        }
+
+
+
+    }
+
+
+    #menu-bar {
+
+        display: none;
+
+
+    }
+
+    label {
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+
+    }
+
+}
+
+@media(max-width:991px) {
+
+    header {
+        padding: 0;
+        // padding: 20px;
+
+        .navbar {
+
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgb(28, 25, 25);
+            border-top: 1px solid rgba(0, 0, 0, .1);
+            display: none;
+
+            ul {
+
+                li {
+
+                    width: 100%;
+
+                    ul {
+                        position: relative;
+
+                        li {
+                            background: #eee;
+
+                            ul {
+
+                                width: 100%;
+
+                                left: 0px;
+
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+
+        label {
+            display: initial;
+
+        }
+
+        transition:all .3s ease-in-out;
+
+        nav.ShowNavigation {
+
+            display: initial;
+            transition: all .3s ease-in-out;
+
+
+        }
+
+        .burgeur {
+
+            display: initial;
+            position: absolute;
+            right: 0;
+            padding-right: 7%;
+
+            i {
+                position: absolute;
+                left: 0;
+                height: 100%
+            }
+
+            .OpenMenu.show {
+                display: block;
+            }
+
+            .OpenMenu.hide {
+                display: none
+            }
+
+
+            .CancelMenu.show {
+                display: block;
+            }
+
+            .CancelMenu.hide {
+                display: none
+            }
+
+        }
+
+
+    }
+
+
+}
