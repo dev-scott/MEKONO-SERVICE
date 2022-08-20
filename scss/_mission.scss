@@ -1,0 +1,246 @@
+.mission {
+    background: rgb(248, 246, 246);
+    padding: 0 10%;
+    width: 100%;
+    height: min-content;
+    // background: yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card_mission {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        height: 100%;
+        // background: #000;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .card {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 70%;
+            // background: red;
+
+            h1 {
+                margin-bottom: 15px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    top: -10px;
+                    right: 0;
+                    background: pink;
+
+                }
+
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 40px;
+            }
+
+        }
+
+        .satifaction {
+            margin-top: 14px;
+            position: relative;
+            padding: 0 15%;
+            // background: green;
+            list-style-type: none;
+            height: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                height: 100%;
+                position: relative;
+
+                h1 {}
+
+                span {
+                    font-size: 10px;
+                }
+
+                &:nth-child(1) {
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: green;
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                        top: -5px;
+                        left: -10px;
+                        z-index: -2;
+                    }
+
+
+                }
+
+                &:nth-child(2) {
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: yellow;
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                        top: -5px;
+                        left: -10px;
+                        z-index: -2;
+                    }
+
+
+                }
+
+                &:nth-child(3) {
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+
+                        background: rgb(148, 35, 54);
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                        top: -5px;
+                        left: -10px;
+                        z-index: -2;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    .image_mission {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        div {
+            height: 500px;
+            width: 80%;
+            border-radius: 15px;
+            background: rgb(187, 182, 182);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+                height: 100%;
+            }
+        }
+    }
+
+    @media (max-width:1330px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .card_mission {
+            width: 100%;
+
+            .card {
+                width: 100%;
+
+            }
+
+            .satifaction {
+                width: 448.2px;
+                // justify-content: space-between;
+                padding: 0 0%;
+
+            }
+        }
+
+        .image_mission {
+            width: 100%;
+
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width:474px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .card_mission {
+            width: 100%;
+            height: 50%;
+
+            .card {
+                width: 100%;
+
+                div {
+                    h1 {}
+
+                    p {
+                        font-size: 11px;
+                        width: 100%;
+                        line-height: 20px;
+                    }
+                }
+
+            }
+
+            .satifaction {
+                width: 100%;
+                // justify-content: space-between;
+                padding: 0 0%;
+
+                li {
+                    h1 {
+                        font-size: 17px;
+
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+            }
+        }
+
+        .image_mission {
+            width: 100%;
+            height: 30%;
+
+            div {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+
+
+}
