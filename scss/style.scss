@@ -1,4 +1,3 @@
-
 /* Import Fonts & All CSS */
 
 
@@ -22,7 +21,8 @@
 // Mixins
 // *************
 @import "mixins/flex";
-@import "mixins/miscellaneous"; 
+@import "mixins/config";
+@import "mixins/miscellaneous";
 
 // **************
 // Stylesheet
@@ -31,4 +31,7 @@
 @import "header";
 @import "home";
 @import "footer";
-
+@import "story";
+@import "mission";
+@import "vision";
+@import "about";
