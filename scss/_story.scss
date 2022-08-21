@@ -1,5 +1,8 @@
 .story {
-
+    z-index: 20;
+    padding: 0% 5%;
+    margin-top: 15px;
+    margin-bottom: 25px;
     width: 100%;
     height: min-content;
     display: grid;
@@ -11,14 +14,36 @@
         "left-middle right-middle"
         "left-bottom right-bottom";
 
+    @media (max-width:1180px) {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
 
     .left_top {
+
         grid-area: left-top;
         // background: blue;
         display: flex;
         justify-content: center;
         align-items: flex-end;
         flex-direction: column;
+
+        @media (max-width:1180px) {
+            // background: red;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            text-align: center;
+
+            width: 100%;
+            margin-bottom: 25px;
+        }
 
         .contain_left-top {
             // background: red;
@@ -28,6 +53,15 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
+
+            @media (max-width:1180px) {
+                display: flex;
+                justify-content: center;
+
+                align-items: center;
+                text-align: center;
+                width: 100%
+            }
 
             span {
                 font-size: 18px;
@@ -39,6 +73,14 @@
             p {
                 font-size: 28px;
                 font-weight: 100;
+
+                @media (max-width:1350px) {
+
+                    font-size: 18px;
+
+                }
+
+
             }
 
 
@@ -88,13 +130,31 @@
         align-items: flex-end;
         flex-direction: column;
 
+        @media (max-width:1180px) {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            text-align: center;
+
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+
+
         .contain_left-bottom {
             width: 60%;
             height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row;
+            flex-direction: column;
+
+
+            // text-align: center;
+
+            width: 100%;
 
             .figure {
                 padding-top: 8%;
@@ -142,12 +202,26 @@
             }
 
             .contain_bottom_text {
+                // background: red;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: flex-start;
                 width: 80%;
                 font-size: 17px;
+
+                @media (max-width:1180px) {
+                    width: 100%;
+                    text-align: center;
+                    align-items: center;
+                }
+
+                @media (max-width:1350px) {
+
+                    font-size: 14px;
+                    line-height: 20px;
+
+                }
 
 
             }
@@ -156,6 +230,12 @@
     }
 
     .right_top {
+        @media (max-width:1180px) {
+
+
+            margin-bottom: 25px;
+        }
+
         grid-area: right-top;
         display: flex;
         justify-content: center;
@@ -192,6 +272,13 @@
                 h1 {
                     font-size: 25px;
                     font-weight: bold;
+
+                    @media (max-width:1350px) {
+
+                        font-size: 18px;
+
+                    }
+
                 }
 
                 p {
@@ -204,6 +291,13 @@
     }
 
     .right_middle {
+        @media (max-width:1180px) {
+
+            margin-bottom: 25px;
+
+        }
+
+        margin-bottom: 25px;
         grid-area: right-middle;
         display: flex;
         justify-content: center;
@@ -238,6 +332,12 @@
 
                 h1 {
                     font-size: 25px;
+
+                    @media (max-width:1350px) {
+
+                        font-size: 18px;
+
+                    }
                 }
 
                 p {
@@ -264,7 +364,11 @@
     }
 
     .right_bottom {
+
+
         grid-area: right-bottom;
+
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -298,6 +402,12 @@
 
                 h1 {
                     font-size: 25px;
+
+                    @media (max-width:1350px) {
+
+                        font-size: 18px;
+
+                    }
                 }
 
                 p {
@@ -310,5 +420,31 @@
 
 
     }
+
+
+
+
+
+}
+
+@media (max-width:1350px) {
+
+
+    .left_top {
+
+        .contain_left-top {
+            span {}
+
+            p {
+                // color: red;
+                font-size: 18px;
+
+            }
+        }
+
+    }
+
+
+
 
 }
