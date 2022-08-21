@@ -144,65 +144,60 @@
 
 
         .contain_left-bottom {
+            // background: red;
             width: 60%;
             height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            flex-direction: row;
+
+            @media (max-width:1180px) {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // background: red;
+            }
 
 
-            // text-align: center;
-
-            width: 100%;
 
             .figure {
-                padding-top: 8%;
+                // background: blue;
+
+                height: 100%;
+                // padding-top: 8%;
                 width: 20%;
 
                 display: flex;
                 justify-content: center;
-                align-items: flex-start;
+                align-items: center;
                 flex-direction: column;
 
-                .yeux {
+                div {
+                    // background: red;
+                    width: 100%;
+                    height: 100%;
+
                     display: flex;
                     justify-content: center;
-                    align-items: flex-end;
+                    align-items: center;
 
-                    .yeux1 {
-                        margin-right: 8px;
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        background: rgb(211, 166, 173);
-
-                    }
-
-                    .yeux2 {
-
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        background: green;
-
+                    img {
+                        width: 70%;
+                        height: 70%
                     }
                 }
 
-                .bouche {
-
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                    background: rgb(133, 168, 34);
-                    clip-path: circle(48.8% at 50% 0);
-                }
 
 
             }
 
             .contain_bottom_text {
-                // background: red;
+                // background: blue;
+
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -211,9 +206,13 @@
                 font-size: 17px;
 
                 @media (max-width:1180px) {
-                    width: 100%;
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
                     align-items: center;
+                    width: 100%;
+                    // font-size: 17px;
+                    width: 100%;
                 }
 
                 @media (max-width:1350px) {
