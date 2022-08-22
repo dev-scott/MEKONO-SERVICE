@@ -102,11 +102,12 @@ textarea {
   height: 24px;
   transition: all 0.2s ease-in-out;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .send-text {
   display: block;
-  margin-top: 10px;
   font: 700 12px "Lato", sans-serif;
   letter-spacing: 2px;
 }
@@ -260,12 +261,20 @@ hr {
     float: none;
     margin: 0 auto;
   }
+  .form-group {
+    width: 100%;
+  }
+  .group-form-control {
+    width: 100%;
+  }
   .form-control,
 textarea {
+    width: 100%;
     margin: 0 auto;
   }
   .form-control-only {
     margin-bottom: 10px;
+    width: 100%;
   }
   .name,
 .email,
@@ -278,12 +287,16 @@ textarea {
   }
   .social-media-list {
     left: 0;
+    font-size: 12px;
   }
   .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    font-size: 12px;
+  }
+  .list-item {
+    font-size: 10px;
   }
   .social-media-list li:after {
     width: 55px;
@@ -303,9 +316,22 @@ textarea {
   max-width: 400px;
 }
 .form-group .group-form-control .form-control {
+  max-width: 400px;
   width: 400px;
 }
 
+@media screen and (max-width: 569px) {
+  .form-group {
+    max-width: 400px;
+  }
+  .form-group .group-form-control {
+    max-width: 400px;
+  }
+  .form-group .group-form-control .form-control {
+    max-width: 400px;
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1322,11 +1348,12 @@ footer {
 .mission {
   font-family: "Montserrat", sans-serif;
   padding: 8% 0%;
-  max-height: 1000px;
-  height: 900px;
+  max-height: 600px;
+  height: min-content;
   height: min-content;
   background-color: #12002f;
   position: relative;
+  overflow: hidden;
   padding: 0 10%;
   width: 100%;
   height: min-content;
@@ -1435,180 +1462,18 @@ footer {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
+  flex-direction: column;
 }
-.mission .image_mission h1,
-.mission .image_mission h3,
-.mission .image_mission p {
-  margin: 0;
-  text-transform: uppercase;
+.mission .image_mission div {
+  height: 80%;
+  width: 80%;
+  border-radius: 15px;
 }
-.mission .image_mission h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  color: #fff;
-}
-.mission .image_mission p {
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-.mission .image_mission .wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  max-height: 100%;
-}
-.mission .image_mission .roll-up {
-  overflow: hidden;
-  position: relative;
-}
-.mission .image_mission .roll-up > span {
-  display: inline-block;
-  position: relative;
-}
-.mission .image_mission .roll-up > span:nth-child(1) {
-  transition-delay: 0.03s;
-}
-.mission .image_mission .roll-up > span:nth-child(2) {
-  transition-delay: 0.06s;
-}
-.mission .image_mission .roll-up > span:nth-child(3) {
-  transition-delay: 0.09s;
-}
-.mission .image_mission .roll-up > span:nth-child(4) {
-  transition-delay: 0.12s;
-}
-.mission .image_mission .roll-up > span:nth-child(5) {
-  transition-delay: 0.15s;
-}
-.mission .image_mission .roll-up > span:nth-child(6) {
-  transition-delay: 0.18s;
-}
-.mission .image_mission .roll-up > span:nth-child(7) {
-  transition-delay: 0.21s;
-}
-.mission .image_mission .roll-up > span > span {
-  display: inline-block;
-  transition: 0.6s cubic-bezier(0.7, 0.01, 0.37, 1);
-  transition-delay: inherit;
-}
-.mission .image_mission .roll-up > span > span:nth-child(1) {
-  position: relative;
-}
-.mission .image_mission .roll-up > span > span:nth-child(2) {
-  position: absolute;
-  transform: translateY(100%);
-  left: 0;
-  color: #16e590;
-}
-.mission .image_mission .text-reveal {
-  position: relative;
-  overflow: hidden;
-}
-.mission .image_mission .text-reveal span {
-  display: block;
-  transition: cubic-bezier(0.7, 0.01, 0.37, 1) 0.6s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span {
-  overflow: hidden;
-  transform: translateX(-100%);
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(1) {
-  transition-delay: 0.1s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(2) {
-  transition-delay: 0.2s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(3) {
-  transition-delay: 0.3s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(4) {
-  transition-delay: 0.4s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(5) {
-  transition-delay: 0.5s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(6) {
-  transition-delay: 0.6s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span:nth-child(7) {
-  transition-delay: 0.7s;
-}
-.mission .image_mission .text-reveal > span:nth-child(2) > span > span {
-  transform: translateX(100%);
-  transition-delay: inherit;
-}
-.mission .image_mission .play-button {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  transition: 0.5s;
-}
-.mission .image_mission .play-button svg {
-  overflow: visible;
-}
-.mission .image_mission .play-button .polygon {
-  fill: #16e590;
-  transition: transform 0.5s, fill 0.5s;
-  transition-timing-function: cubic-bezier(0.7, 0.01, 0.37, 1);
-  transform-origin: 50% 50%;
-}
-.mission .image_mission .card {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  max-width: 100%;
+.mission .image_mission div img {
   width: 100%;
   height: 100%;
-  padding: 20px;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  cursor: pointer;
-}
-.mission .image_mission .card:before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
-}
-.mission .image_mission .card .card__content {
-  z-index: 1;
-}
-.mission .image_mission .card .card__content .card__content--description {
-  text-align: left;
-  max-width: 175px;
-}
-.mission .image_mission .card:hover .play-button {
-  transform: scale(1.1);
-}
-.mission .image_mission .card:hover .play-button .polygon {
-  transform: translateZ(0px) rotate(90deg);
-  fill: #67fbbe;
-}
-.mission .image_mission .card:hover .roll-up > span > span:nth-child(1) {
-  transform: translateY(-100%);
-}
-.mission .image_mission .card:hover .roll-up > span > span:nth-child(2) {
-  transform: translateY(0);
-}
-.mission .image_mission .card:hover .text-reveal > span:nth-child(2) > span,
-.mission .image_mission .card:hover .text-reveal > span:nth-child(2) > span > span {
-  transform: translateX(0);
 }
 @media (max-width: 1330px) {
   .mission {
@@ -1681,6 +1546,7 @@ footer {
   padding: 0 10%;
   width: 100%;
   height: min-content;
+  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1776,6 +1642,8 @@ footer {
   z-index: -2;
 }
 .vision .image_mission {
+  height: 100%;
+  padding: 10% 0%;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -1783,10 +1651,14 @@ footer {
   flex-direction: column;
 }
 .vision .image_mission div {
-  height: 100%;
+  height: 80%;
   width: 80%;
   border-radius: 15px;
   background: rgb(187, 182, 182);
+}
+.vision .image_mission div img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 1330px) {
   .vision {

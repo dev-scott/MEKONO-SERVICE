@@ -210,143 +210,143 @@ $('button').click(function(){
         /**
          * Prepare elements
          */
-        const prepareGlare = function () {
-            const glarePrerender = this.settings.glarePrerender;
+//         const prepareGlare = function () {
+//             const glarePrerender = this.settings.glarePrerender;
 
-            // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
-            if (!glarePrerender)
-                // Create glare element
-                $(this).append('<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>');
+//             // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
+//             if (!glarePrerender)
+//                 // Create glare element
+//                 $(this).append('<div class="js-tilt-glare"><div class="js-tilt-glare-inner"></div></div>');
 
-            // Store glare selector if glare is enabled
-            this.glareElementWrapper = $(this).find(".js-tilt-glare");
-            this.glareElement = $(this).find(".js-tilt-glare-inner");
+//             // Store glare selector if glare is enabled
+//             this.glareElementWrapper = $(this).find(".js-tilt-glare");
+//             this.glareElement = $(this).find(".js-tilt-glare-inner");
 
-            // Remember? We assume all css is already set, so just return
-            if (glarePrerender) return;
+//             // Remember? We assume all css is already set, so just return
+//             if (glarePrerender) return;
 
-            // Abstracted re-usable glare styles
-            const stretch = {
-                'position': 'absolute',
-                'top': '0',
-                'left': '0',
-                'width': '100%',
-                'height': '100%',
-            };
+//             // Abstracted re-usable glare styles
+//             const stretch = {
+//                 'position': 'absolute',
+//                 'top': '0',
+//                 'left': '0',
+//                 'width': '100%',
+//                 'height': '100%',
+//             };
 
-            // Style glare wrapper
-            this.glareElementWrapper.css(stretch).css({
-                'overflow': 'hidden',
-            });
+//             // Style glare wrapper
+//             this.glareElementWrapper.css(stretch).css({
+//                 'overflow': 'hidden',
+//             });
 
-            // Style glare element
-            this.glareElement.css({
-                'position': 'absolute',
-                'top': '50%',
-                'left': '50%',
-                'pointer-events': 'none',
-                'background-image': `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
-                'width': `${$(this).outerWidth() * 2}`,
-                'height': `${$(this).outerWidth() * 2}`,
-                'transform': 'rotate(180deg) translate(-50%, -50%)',
-                'transform-origin': '0% 0%',
-                'opacity': '0',
-            });
+//             // Style glare element
+//             this.glareElement.css({
+//                 'position': 'absolute',
+//                 'top': '50%',
+//                 'left': '50%',
+//                 'pointer-events': 'none',
+//                 'background-image': `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
+//                 'width': `${$(this).outerWidth() * 2}`,
+//                 'height': `${$(this).outerWidth() * 2}`,
+//                 'transform': 'rotate(180deg) translate(-50%, -50%)',
+//                 'transform-origin': '0% 0%',
+//                 'opacity': '0',
+//             });
 
-        };
+//         };
 
-        /**
-         * Update glare on resize
-         */
-        const updateGlareSize = function () {
-            this.glareElement.css({
-                'width': `${$(this).outerWidth() * 2}`,
-                'height': `${$(this).outerWidth() * 2}`,
-            });
-        };
+//         /**
+//          * Update glare on resize
+//          */
+//         const updateGlareSize = function () {
+//             this.glareElement.css({
+//                 'width': `${$(this).outerWidth() * 2}`,
+//                 'height': `${$(this).outerWidth() * 2}`,
+//             });
+//         };
 
-        /**
-         * Public methods
-         */
-        $.fn.tilt.destroy = function () {
-            $(this).each(function () {
-                $(this).find('.js-tilt-glare').remove();
-                $(this).css({ 'will-change': '', 'transform': '' });
-                $(this).off('mousemove mouseenter mouseleave');
-            });
-        };
+//         /**
+//          * Public methods
+//          */
+//         $.fn.tilt.destroy = function () {
+//             $(this).each(function () {
+//                 $(this).find('.js-tilt-glare').remove();
+//                 $(this).css({ 'will-change': '', 'transform': '' });
+//                 $(this).off('mousemove mouseenter mouseleave');
+//             });
+//         };
 
-        $.fn.tilt.getValues = function () {
-            const results = [];
-            $(this).each(function () {
-                this.mousePositions = getMousePositions.call(this);
-                results.push(getValues.call(this));
-            });
-            return results;
-        };
+//         $.fn.tilt.getValues = function () {
+//             const results = [];
+//             $(this).each(function () {
+//                 this.mousePositions = getMousePositions.call(this);
+//                 results.push(getValues.call(this));
+//             });
+//             return results;
+//         };
 
-        $.fn.tilt.reset = function () {
-            $(this).each(function () {
-                this.mousePositions = getMousePositions.call(this);
-                this.settings = $(this).data('settings');
-                mouseLeave.call(this);
-                setTimeout(() => {
-                    this.reset = false;
-                }, this.settings.transition);
-            });
-        };
+//         $.fn.tilt.reset = function () {
+//             $(this).each(function () {
+//                 this.mousePositions = getMousePositions.call(this);
+//                 this.settings = $(this).data('settings');
+//                 mouseLeave.call(this);
+//                 setTimeout(() => {
+//                     this.reset = false;
+//                 }, this.settings.transition);
+//             });
+//         };
 
-        /**
-         * Loop every instance
-         */
-        return this.each(function () {
+//         /**
+//          * Loop every instance
+//          */
+//         return this.each(function () {
 
-            /**
-             * Default settings merged with user settings
-             * Can be set trough data attributes or as parameter.
-             * @type {*}
-             */
-            this.settings = $.extend({
-                maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 20,
-                perspective: $(this).is('[data-tilt-perspective]') ? $(this).data('tilt-perspective') : 300,
-                easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') : 'cubic-bezier(.03,.98,.52,.99)',
-                scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '1',
-                speed: $(this).is('[data-tilt-speed]') ? $(this).data('tilt-speed') : '400',
-                transition: $(this).is('[data-tilt-transition]') ? $(this).data('tilt-transition') : true,
-                axis: $(this).is('[data-tilt-axis]') ? $(this).data('tilt-axis') : null,
-                reset: $(this).is('[data-tilt-reset]') ? $(this).data('tilt-reset') : true,
-                glare: $(this).is('[data-tilt-glare]') ? $(this).data('tilt-glare') : false,
-                maxGlare: $(this).is('[data-tilt-maxglare]') ? $(this).data('tilt-maxglare') : 1,
-            }, options);
+//             /**
+//              * Default settings merged with user settings
+//              * Can be set trough data attributes or as parameter.
+//              * @type {*}
+//              */
+//             this.settings = $.extend({
+//                 maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 20,
+//                 perspective: $(this).is('[data-tilt-perspective]') ? $(this).data('tilt-perspective') : 300,
+//                 easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') : 'cubic-bezier(.03,.98,.52,.99)',
+//                 scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '1',
+//                 speed: $(this).is('[data-tilt-speed]') ? $(this).data('tilt-speed') : '400',
+//                 transition: $(this).is('[data-tilt-transition]') ? $(this).data('tilt-transition') : true,
+//                 axis: $(this).is('[data-tilt-axis]') ? $(this).data('tilt-axis') : null,
+//                 reset: $(this).is('[data-tilt-reset]') ? $(this).data('tilt-reset') : true,
+//                 glare: $(this).is('[data-tilt-glare]') ? $(this).data('tilt-glare') : false,
+//                 maxGlare: $(this).is('[data-tilt-maxglare]') ? $(this).data('tilt-maxglare') : 1,
+//             }, options);
 
 
-            this.init = () => {
-                // Store settings
-                $(this).data('settings', this.settings);
+//             this.init = () => {
+//                 // Store settings
+//                 $(this).data('settings', this.settings);
 
-                // Prepare element
-                if (this.settings.glare) prepareGlare.call(this);
+//                 // Prepare element
+//                 if (this.settings.glare) prepareGlare.call(this);
 
-                // Bind events
-                bindEvents.call(this);
-            };
+//                 // Bind events
+//                 bindEvents.call(this);
+//             };
 
-            // Init
-            this.init();
+//             // Init
+//             this.init();
 
-        });
-    };
+//         });
+//     };
 
-    /**
-     * Auto load
-     */
-    $('[data-tilt]').tilt();
+//     /**
+//      * Auto load
+//      */
+//     $('[data-tilt]').tilt();
 
-    return true;
-}));
+//     return true;
+// }));
 
-$(".card").tilt({
-    glare: true,
-    maxGlare: .2,
-    maxTilt: 5
-});
+// $(".card").tilt({
+//     glare: true,
+//     maxGlare: .2,
+//     maxTilt: 5
+// });

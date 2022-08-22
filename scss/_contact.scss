@@ -5,7 +5,7 @@
     max-height: 1200px;
 
     background: rgb(255, 252, 252);
-    padding-bottom:20px;
+    padding-bottom: 20px;
 
 }
 
@@ -85,13 +85,16 @@ textarea {
     width: max-content;
     height: 24px;
     transition: all .2s ease-in-out;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .send-text {
     display: block;
-    margin-top: 10px;
+    // margin-top: 10px;
     font: 700 12px 'Lato', sans-serif;
     letter-spacing: 2px;
 }
@@ -267,14 +270,23 @@ hr {
         margin: 0 auto;
     }
 
+    .form-group {
+        width: 100%;
+    }
+
+    .group-form-control {
+        width: 100%;
+    }
+
     .form-control,
     textarea {
-
+        width: 100%;
         margin: 0 auto;
     }
 
     .form-control-only {
         margin-bottom: 10px;
+        width: 100%;
     }
 
 
@@ -291,13 +303,20 @@ hr {
 
     .social-media-list {
         left: 0;
+        font-size: 12px;
     }
 
     .social-media-list li {
-        height: 55px;
-        width: 55px;
-        line-height: 55px;
-        font-size: 2rem;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .contact-list {}
+
+    .list-item {
+        font-size: 10px;
     }
 
     .social-media-list li:after {
@@ -324,8 +343,33 @@ hr {
         max-width: 400px;
 
         .form-control {
+            max-width: 400px;
+            // width: max-content;
             width: 400px;
         }
     }
+
+}
+
+
+@media screen and (max-width: 569px) {
+
+    .form-group {
+
+        // background: blue;
+        max-width: 400px;
+
+        .group-form-control {
+            max-width: 400px;
+
+            .form-control {
+                max-width: 400px;
+                // width: max-content;
+                width: 100%;
+            }
+        }
+
+    }
+
 
 }
