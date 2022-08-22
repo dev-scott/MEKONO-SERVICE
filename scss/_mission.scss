@@ -6,8 +6,8 @@
 
     padding: 8% 0%;
 
-    max-height: 600px;
-    height: min-content;
+    max-height: 1300px;
+    // height: min-content;
 
     height: min-content;
 
@@ -222,7 +222,9 @@
 
     }
 
-    @media (max-width:1330px) {
+
+
+    @media (max-width:900px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -244,14 +246,98 @@
             }
         }
 
-        .image_mission {
 
+
+        .image_mission {
+            z-index: 5;
             width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-direction: column;
+
 
             div {
+                height: 50%;
+                width: 50%;
+                border-radius: 15px;
+                // background: rgb(187, 182, 182);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+
+
+
+        }
+
+
+
+
+    }
+
+    @media (max-width:950px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .card_mission {
+            width: 100%;
+            height: 50%;
+
+            .card {
                 width: 100%;
+
+                div {
+                    h1 {}
+
+                    p {
+                        font-size: 11px;
+                        width: 100%;
+                        line-height: 40px;
+                    }
+                }
+
+            }
+
+            .satifaction {
+                width: 100%;
+                // justify-content: space-between;
+                padding: 0 20%;
+                margin-left: 5px;
+
+                li {
+                    h1 {
+                        font-size: 17px;
+
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
             }
         }
+
+        // .image_mission {
+        //     width: 100%;
+        //     height: 30%;
+
+        //     div {
+        //         width: 100%;
+        //         height: 300px;
+        //     }
+        // }
+
+
+
     }
 
     @media (max-width:474px) {
@@ -308,6 +394,48 @@
                 height: 300px;
             }
         }
+    }
+
+    @media (max-width:1280px) {
+
+
+        .card_mission {
+            width: 100%;
+            height: 50%;
+
+            .card {
+                width: 100%;
+
+                div {
+                    h1 {}
+
+                    p {
+                        font-size: 11px;
+                        width: 100%;
+                        line-height: 30px;
+                    }
+                }
+
+            }
+
+            .satifaction {
+
+
+                li {
+                    h1 {
+                        font-size: 10px;
+
+                    }
+
+                    span {
+                        font-size: 5px;
+                    }
+                }
+
+            }
+        }
+
+
     }
 
 

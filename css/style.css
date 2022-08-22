@@ -727,7 +727,14 @@ header label {
   width: 100%;
   height: 50%;
 }
-.home .home_img .home_img {
+.home .home_img div {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .home_img div .home_img {
   height: 70%;
   width: 70%;
 }
@@ -1348,8 +1355,7 @@ footer {
 .mission {
   font-family: "Montserrat", sans-serif;
   padding: 8% 0%;
-  max-height: 600px;
-  height: min-content;
+  max-height: 1300px;
   height: min-content;
   background-color: #12002f;
   position: relative;
@@ -1475,7 +1481,7 @@ footer {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 1330px) {
+@media (max-width: 900px) {
   .mission {
     display: flex;
     justify-content: center;
@@ -1493,10 +1499,54 @@ footer {
     padding: 0 0%;
   }
   .mission .image_mission {
+    z-index: 5;
     width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
   }
   .mission .image_mission div {
+    height: 50%;
+    width: 50%;
+    border-radius: 15px;
+  }
+  .mission .image_mission div img {
     width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .mission .card_mission {
+    width: 100%;
+    height: 50%;
+  }
+  .mission .card_mission .card {
+    width: 100%;
+  }
+  .mission .card_mission .card div p {
+    font-size: 11px;
+    width: 100%;
+    line-height: 40px;
+  }
+  .mission .card_mission .satifaction {
+    width: 100%;
+    padding: 0 20%;
+    margin-left: 5px;
+  }
+  .mission .card_mission .satifaction li h1 {
+    font-size: 17px;
+  }
+  .mission .card_mission .satifaction li span {
+    font-size: 10px;
   }
 }
 @media (max-width: 474px) {
@@ -1538,6 +1588,26 @@ footer {
     height: 300px;
   }
 }
+@media (max-width: 1280px) {
+  .mission .card_mission {
+    width: 100%;
+    height: 50%;
+  }
+  .mission .card_mission .card {
+    width: 100%;
+  }
+  .mission .card_mission .card div p {
+    font-size: 11px;
+    width: 100%;
+    line-height: 30px;
+  }
+  .mission .card_mission .satifaction li h1 {
+    font-size: 10px;
+  }
+  .mission .card_mission .satifaction li span {
+    font-size: 5px;
+  }
+}
 
 .vision {
   color: black;
@@ -1550,6 +1620,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1180px) {
+  .vision {
+    max-height: 1300px;
+  }
 }
 .vision .card_mission {
   padding-top: 10%;
@@ -1660,30 +1735,6 @@ footer {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 1330px) {
-  .vision {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-  }
-  .vision .card_mission {
-    width: 100%;
-  }
-  .vision .card_mission .card {
-    width: 100%;
-  }
-  .vision .card_mission .satifaction {
-    width: 448.2px;
-    padding: 0 0%;
-  }
-  .vision .image_mission {
-    width: 100%;
-  }
-  .vision .image_mission div {
-    width: 100%;
-  }
-}
 @media (max-width: 474px) {
   .vision {
     display: flex;
@@ -1719,6 +1770,62 @@ footer {
   }
   .vision .image_mission div {
     width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 950px) {
+  .vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .vision .card_mission {
+    width: 100%;
+    height: 50%;
+  }
+  .vision .card_mission .card {
+    width: 100%;
+  }
+  .vision .card_mission .card div p {
+    font-size: 11px;
+    width: 100%;
+    line-height: 40px;
+  }
+  .vision .card_mission .satifaction {
+    width: 100%;
+    padding: 0 20%;
+    margin-left: 5px;
+  }
+  .vision .card_mission .satifaction li h1 {
+    font-size: 17px;
+  }
+  .vision .card_mission .satifaction li span {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1280px) {
+  .vision .image_mission {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vision .card_mission {
+    width: 100%;
+    height: 50%;
+  }
+  .vision .card_mission .card {
+    width: 100%;
+  }
+  .vision .card_mission .card div p {
+    font-size: 12px;
+    width: 100%;
+    line-height: 30px;
+  }
+  .vision .card_mission .satifaction li h1 {
+    font-size: 10px;
+  }
+  .vision .card_mission .satifaction li span {
+    font-size: 5px;
   }
 }
 
