@@ -342,6 +342,8 @@ textarea {
 }
 
 header {
+  padding: 0% 5%;
+  width: 100vw;
   position: fixed;
   top: 0;
   right: 0;
@@ -737,6 +739,18 @@ header label {
 .home .home_img div .home_img {
   height: 70%;
   width: 70%;
+}
+@media (max-width: 700px) {
+  .home .home_img {
+    height: 0px;
+    display: none;
+  }
+  .home .home_img div {
+    display: none;
+  }
+  .home .home_img div .home_img {
+    display: none;
+  }
 }
 @media (max-width: 665px) {
   .home .home_text h1 {
