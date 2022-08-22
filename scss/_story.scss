@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Work+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Hind+Siliguri:wght@300&family=Work+Sans:ital,wght@1,200&display=swap');
+
 .story {
+    font-family: 'Work Sans', sans-serif;
+    background: white;
+    color: black;
     z-index: 20;
     padding: 0% 5%;
     margin-top: 15px;
@@ -25,6 +32,8 @@
 
 
     .left_top {
+        font-family: 'Work Sans', sans-serif;
+
 
         grid-area: left-top;
         // background: blue;
@@ -67,14 +76,17 @@
                 font-size: 18px;
                 font-family: 'Courier New', Courier, monospace;
                 color: green;
-                margin-bottom: 13px
+                margin-bottom: 13px;
+                font-family: 'Work Sans', sans-serif;
+
             }
 
-            p {
+            h1 {
                 font-size: 28px;
                 font-weight: 100;
 
-                @media (max-width:1350px) {
+                    font-family: 'Work Sans', sans-serif;
+@media (max-width:1350px) {
 
                     font-size: 18px;
 
@@ -110,6 +122,7 @@
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
+                font-family: 'Work Sans', sans-serif;
                 background: blue;
                 ;
 
@@ -205,6 +218,17 @@
                 width: 80%;
                 font-size: 17px;
 
+                line-height: 30px;
+
+                p {
+
+font-family: 'Hind Siliguri', sans-serif;
+                }
+
+
+
+
+
                 @media (max-width:1180px) {
                     display: flex;
                     justify-content: center;
@@ -249,6 +273,7 @@
             justify-content: center;
 
             .chiffre {
+                                font-family: 'Work Sans', sans-serif;
                 padding-top: 18px;
                 display: flex;
                 justify-content: center;
@@ -271,6 +296,8 @@
                 h1 {
                     font-size: 25px;
                     font-weight: bold;
+                    font-family: 'Work Sans', sans-serif;
+
 
                     @media (max-width:1350px) {
 
@@ -284,6 +311,7 @@
                     margin-top: 15px;
                     font-size: 13px;
                     line-height: 25px;
+font-family: 'Hind Siliguri', sans-serif;
                 }
             }
         }
@@ -319,6 +347,7 @@
                 height: 100%;
                 width: 10%;
                 font-size: 25px;
+                font-family: 'Work Sans', sans-serif;
             }
 
             .other {
@@ -331,6 +360,7 @@
 
                 h1 {
                     font-size: 25px;
+                    font-family: 'Work Sans', sans-serif;
 
                     @media (max-width:1350px) {
 
@@ -343,7 +373,7 @@
                     margin-top: 15px;
                     font-size: 13px;
                     line-height: 25px;
-                }
+font-family: 'Hind Siliguri', sans-serif;                }
             }
         }
 
@@ -380,6 +410,7 @@
             justify-content: center;
 
             .chiffre {
+                                font-family: 'Work Sans', sans-serif;
                 padding-top: 18px;
                 display: flex;
                 justify-content: center;
@@ -400,6 +431,8 @@
                 flex-direction: column;
 
                 h1 {
+
+                                        font-family: 'Work Sans', sans-serif;
                     font-size: 25px;
 
                     @media (max-width:1350px) {
@@ -413,6 +446,7 @@
                     margin-top: 15px;
                     font-size: 13px;
                     line-height: 25px;
+                    font-family: 'Hind Siliguri', sans-serif;
                 }
             }
         }

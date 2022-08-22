@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
 
     min-height: 100vh;
-    background: #000000;
-    background: linear-gradient(90deg, #000000 0%, rgba(39, 39, 39, 0.79) 80%);
-    background: -webkit-linear-gradient(90deg, #000000 0%, rgba(39, 39, 39, 0.79) 80%);
-    background: -moz-linear-gradient(90deg, #000000 0%, rgba(39, 39, 39, 0.79) 80%);
+
     overflow-x: hidden;
     color: white;
+
+    // padding:0px 5px;
+
+    font-family: 'Roboto', sans-serif;
 
 }

@@ -1,10 +1,11 @@
 .contact {
     width: 100%;
-    height: 400px;
+    height: min-content;
 
     max-height: 1200px;
 
-    background: white;
+    background: rgb(255, 252, 252);
+    padding-bottom:20px;
 
 }
 
@@ -43,21 +44,19 @@
 
 .form-control,
 textarea {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 
-    color: white;
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     padding: 5px 10px;
     border-radius: 4px;
 
-    background: #ffffff;
+    background: #141414;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #274046, #E6DADA);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #274046, #E6DADA);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    border: none;
+
+    border: 1px solid rgb(37, 37, 37);
     outline: none
 }
 
@@ -68,16 +67,26 @@ textarea {
 .send-button {
     margin-top: 15px;
     height: 24px;
-    width: 400px;
+    // width: 400px;
+    width: 100%;
+    max-width: 400px;
     overflow: hidden;
     transition: all .2s ease-in-out;
+    background: rgba(14, 181, 223, 0.664);
+    border: none;
+    outline: none;
+    color: white;
 
 }
 
 .alt-send-button {
-    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    width: max-content;
     height: 24px;
     transition: all .2s ease-in-out;
+    display: flex;
+
 }
 
 .send-text {
@@ -88,7 +97,7 @@ textarea {
 }
 
 .alt-send-button:hover {
-    transform: translate3d(0px, -19px, 0px);
+    // transform: translate3d(0px, -19px, 0px);
 }
 
 /* Begin Right Contact Page */
@@ -101,18 +110,18 @@ textarea {
     list-style-type: none;
     margin-left: -30px;
     padding-right: 20px;
-        padding: 0 10%;
+    padding: 0 10%;
 }
 
 .list-item {
     line-height: 4;
-    color: #aaa;
+    color: rgb(39, 37, 37);
 }
 
 .contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
-    color: #bbb;
+    color: rgb(26, 25, 25);
 }
 
 .place {
@@ -128,13 +137,14 @@ textarea {
 }
 
 .contact-text a {
-    color: #bbb;
+    color: rgb(26, 25, 25);
+
     text-decoration: none;
     transition-duration: 0.2s;
 }
 
 .contact-text a:hover {
-    color: #fff;
+    // color: #fff;
     text-decoration: none;
 }
 
