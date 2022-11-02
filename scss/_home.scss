@@ -37,7 +37,8 @@
             width: 100%;
 
             font-family: 'Open Sans', sans-serif;
-            font-size: 60px;
+            font-size: 40px;
+            background-color: red;
 
 
 
@@ -112,28 +113,28 @@
     }
 
 
-        @media (max-width:700px) {
-    
-    
-            .home_img {
-                height: 0px;
+    @media (max-width:700px) {
+
+
+        .home_img {
+            height: 0px;
+            display: none;
+
+            div {
+
                 display: none;
-    
-                div {
-    
+
+                .home_img {
                     display: none;
-    
-                    .home_img {
-                        display: none;
-                    }
-    
                 }
-    
-    
+
             }
-    
-    
+
+
         }
+
+
+    }
 
 
     @media(max-width:665px) {
