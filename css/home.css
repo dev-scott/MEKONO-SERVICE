@@ -4,18 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 .dio {
   width: 100%;
   background-color: #000;
   color: white;
   text-align: center;
-}
-
-.consulte {
-
-  color: #ff0000;
-
 }
 
 .propos {
@@ -27,7 +20,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .propos .content_home {
   height: 90%;
   width: 90%;
@@ -35,7 +27,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .propos .content_home .home_left {
   display: flex;
   justify-content: center;
@@ -44,17 +35,14 @@
   height: 100%;
   width: 50%;
 }
-
 .propos .content_home .home_left span {
   color: white;
   margin-bottom: 10px;
 }
-
 .propos .content_home .home_left p {
   margin-top: 15px;
   font-size: 15px;
 }
-
 .propos .content_home .home_left .content_music {
   display: flex;
   justify-content: space-between;
@@ -62,21 +50,17 @@
   width: 86%;
   height: 100px;
 }
-
 .propos .content_home .home_left .content_music .content_play {
   color: white;
   font-size: 20px;
   width: 5%;
 }
-
 .propos .content_home .home_left .content_music .content_play .fa-solid {
   font-size: 40px;
 }
-
 .propos .content_home .home_left .content_music .song_dowload i:nth-child(1) {
   margin-right: 5px;
 }
-
 .propos .content_home .home_left .content_music .content_range {
   width: 100%;
   display: flex;
@@ -84,11 +68,9 @@
   align-items: center;
   width: 70%;
 }
-
 .propos .content_home .home_left .content_music .content_range span {
   font-size: 10px;
 }
-
 .propos .content_home .home_left .content_music .content_range input {
   -webkit-appearance: none;
   width: 70%;
@@ -98,13 +80,11 @@
   background-color: aquamarine;
   overflow: hidden;
 }
-
 .propos .content_home .home_left .ourApp {
   margin-top: 20px;
   width: 78%;
   height: 130px;
 }
-
 .propos .content_home .home_left .ourApp .app {
   height: 130px;
   margin-top: 10px;
@@ -113,7 +93,6 @@
   align-items: center;
   flex-direction: row;
 }
-
 .propos .content_home .home_left .ourApp .app .card_app {
   box-shadow: 2px 5px 12px 9px rgba(97, 94, 94, 0.19);
   -webkit-box-shadow: 2px 5px 12px 9px rgba(122, 118, 118, 0.19);
@@ -126,17 +105,14 @@
   align-items: center;
   height: 70px;
 }
-
 .propos .content_home .home_left .ourApp .app .card_app .img {
   height: 60px;
   width: 80px;
 }
-
 .propos .content_home .home_left .ourApp .app .card_app .img img {
   width: 100%;
   height: 100%;
 }
-
 .propos .content_home .home_left .ourApp .app .card_app .text {
   margin-left: 5px;
   display: flex;
@@ -146,15 +122,12 @@
   height: 40px;
   width: 100%;
 }
-
 .propos .content_home .home_left .ourApp .app .card_app .text span {
   font-size: 8px;
 }
-
 .propos .content_home .home_left .ourApp .app .card_app .text h1 {
   font-size: 20px;
 }
-
 .propos .content_home .home_right {
   background-color: red;
   height: 100%;
@@ -163,12 +136,10 @@
   justify-content: center;
   align-items: center;
 }
-
 .propos .content_home .home_right .img {
   height: 90%;
   width: 90%;
 }
-
 .propos .content_home .home_right .img img {
   width: 100%;
   height: 100%;
@@ -195,7 +166,6 @@
   height: 100vh;
   width: 100%;
 }
-
 .home .home_text {
   text-align: center;
   width: 100%;
@@ -206,14 +176,12 @@
   flex-direction: column;
   margin-bottom: 30px;
 }
-
 .home .home_text h1 {
   color: white;
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 60px;
 }
-
 .home .home_text .button {
   margin-top: 15px;
   margin-left: 400px;
@@ -221,7 +189,6 @@
   display: flex;
   align-items: flex-start;
 }
-
 .home .home_text .button button {
   border: none;
   margin-left: 10px;
@@ -231,22 +198,18 @@
   border: 1px solid black;
   border-radius: 50px;
 }
-
 .home .home_text .button button:nth-child(1) {
   color: white;
   background: black;
   transition: all 0.3s ease-in-out;
 }
-
 .home .home_text .button button:nth-child(1):hover {
   background: none;
   color: black;
 }
-
 .home .home_text .button button:nth-child(2) {
   color: black;
 }
-
 .home .home_img {
   display: flex;
   justify-content: center;
@@ -254,7 +217,6 @@
   width: 100%;
   height: 50%;
 }
-
 .home .home_img div {
   width: 80%;
   height: 80%;
@@ -262,33 +224,27 @@
   justify-content: center;
   align-items: center;
 }
-
 .home .home_img div .home_img {
   height: 70%;
   width: 70%;
 }
-
 @media (max-width: 700px) {
   .home .home_img {
     height: 0px;
     display: none;
   }
-
   .home .home_img div {
     display: none;
   }
-
   .home .home_img div .home_img {
     display: none;
   }
 }
-
 @media (max-width: 665px) {
   .home .home_text h1 {
     width: 400px;
     font-size: 40px;
   }
-
   .home .home_img {
     display: flex;
     justify-content: center;
@@ -296,24 +252,20 @@
     width: 50%;
     height: 50%;
   }
-
   .home .home_img .home_img {
     height: 100px;
     width: 100px;
   }
 }
-
 @media (max-width: 450px) {
   .home .home_text h1 {
     width: 400px;
     font-size: 25px;
   }
-
   .home .home_text .button button {
     padding: 5px 15px;
     border-radius: 10px;
   }
-
   .home .home_img {
     display: flex;
     justify-content: center;
@@ -321,7 +273,6 @@
     width: 50%;
     height: 50%;
   }
-
   .home .home_img .home_img {
     height: 100px;
     width: 100px;
@@ -353,18 +304,15 @@ header {
   justify-content: space-between;
   z-index: 1000;
 }
-
 header .burgeur {
   display: none;
   color: white;
 }
-
 header h1 {
   font-family: "Aboreto", cursive;
   display: block;
   padding: 20px;
 }
-
 header h1 .logo {
   -moz-user-select: none;
   /* Firefox */
@@ -378,19 +326,16 @@ header h1 .logo {
   font-size: 25px;
   color: rgb(251, 251, 251);
 }
-
 header .navbar {
   width: 75%;
   display: flex;
   justify-content: space-around;
 }
-
 header .navbar .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 header .navbar .wrapper .button {
   display: inline-block;
   height: 30px;
@@ -404,11 +349,9 @@ header .navbar .wrapper .button {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out;
 }
-
 header .navbar .wrapper .button:hover {
   width: 140px;
 }
-
 header .navbar .wrapper .button .icon {
   color: black;
   display: inline-block;
@@ -420,37 +363,29 @@ header .navbar .wrapper .button .icon {
   line-height: 30px;
   transition: all 0.3s ease-out;
 }
-
 header .navbar .wrapper .button:nth-child(1):hover .icon {
   background: #4267B2;
 }
-
 header .navbar .wrapper .button:nth-child(2):hover .icon {
   background: #1DA1F2;
 }
-
 header .navbar .wrapper .button:nth-child(3):hover .icon {
   background: #E1306C;
 }
-
 header .navbar .wrapper .button:nth-child(4):hover .icon {
   background: #333;
 }
-
 header .navbar .wrapper .wrapper .button:nth-child(5):hover .icon {
   background: #ff0000;
 }
-
 header .navbar .wrapper .button .icon i {
   font-size: 15px;
   line-height: 30px;
   transition: all 0.3s ease-out;
 }
-
 header .navbar .wrapper .button:hover .icon i {
   color: rgb(156, 229, 234);
 }
-
 header .navbar .wrapper .button span {
   font-size: 15px;
   font-weight: 500;
@@ -458,46 +393,36 @@ header .navbar .wrapper .button span {
   margin-left: 10px;
   transition: all 0.3s ease-out;
 }
-
 header .navbar .wrapper .button:nth-child(1) span {
   color: #4267B2;
 }
-
 header .navbar .wrapper .button:nth-child(2) span {
   color: #1DA1F2;
 }
-
 header .navbar .wrapper .button:nth-child(3) span {
   color: #E1306C;
 }
-
 header .navbar .wrapper .button:nth-child(4) span {
   color: #333;
 }
-
 header .navbar .wrapper .button:nth-child(5) span {
   color: #ff0000;
 }
-
 header .navbar ul {
   width: 700px;
   list-style: none;
 }
-
 header .navbar ul li {
   position: relative;
   float: left;
   transition: all 0.2s ease-in-out;
 }
-
-header .navbar ul li:hover>ul {
+header .navbar ul li:hover > ul {
   display: initial;
 }
-
-header .navbar ul li:focus-within>ul {
+header .navbar ul li:focus-within > ul {
   display: initial;
 }
-
 header .navbar ul li a {
   font-size: 15px;
   padding: 30px;
@@ -505,12 +430,10 @@ header .navbar ul li a {
   display: block;
   transition: all 0.1s ease-in-out;
 }
-
 header .navbar ul li a:hover {
   background: #333;
   color: gray;
 }
-
 header .navbar ul li ul {
   position: absolute;
   width: 200px;
@@ -518,17 +441,14 @@ header .navbar ul li ul {
   left: 0;
   display: none;
 }
-
 header .navbar ul li ul li {
   width: 100%;
   border-top: 1px solid gray;
 }
-
 header .navbar ul li ul li ul {
   left: 200px;
   top: 0px;
 }
-
 header .navbar .language {
   color: white;
   display: flex;
@@ -538,11 +458,9 @@ header .navbar .language {
   padding: 0px;
   width: 20px;
 }
-
 header #menu-bar {
   display: none;
 }
-
 header label {
   font-size: 20px;
   color: #333;
@@ -555,7 +473,6 @@ header label {
     padding: 0;
     transition: all 0.3s ease-in-out;
   }
-
   header .navbar {
     display: flex;
     justify-content: center;
@@ -570,28 +487,22 @@ header label {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     display: none;
   }
-
   header .navbar .language {
     display: none;
   }
-
   header .navbar ul li {
     width: 100%;
   }
-
   header .navbar ul li ul {
     position: relative;
   }
-
   header .navbar ul li ul li {
     background: #eee;
   }
-
   header .navbar ul li ul li ul {
     width: 100%;
     left: 0px;
   }
-
   header .navbar .wrapper {
     flex: 0 1 auto;
     display: flex;
@@ -601,7 +512,6 @@ header label {
     padding-left: 3%;
     width: 100%;
   }
-
   header .navbar .wrapper .button {
     display: inline-block;
     height: 30px;
@@ -615,11 +525,9 @@ header label {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
   }
-
   header .navbar .wrapper .button:hover {
     width: 140px;
   }
-
   header .navbar .wrapper .button .icon {
     color: black;
     display: inline-block;
@@ -631,37 +539,29 @@ header label {
     line-height: 30px;
     transition: all 0.3s ease-out;
   }
-
   header .navbar .wrapper .button:nth-child(1):hover .icon {
     background: #4267B2;
   }
-
   header .navbar .wrapper .button:nth-child(2):hover .icon {
     background: #1DA1F2;
   }
-
   header .navbar .wrapper .button:nth-child(3):hover .icon {
     background: #E1306C;
   }
-
   header .navbar .wrapper .button:nth-child(4):hover .icon {
     background: #333;
   }
-
   header .navbar .wrapper .wrapper .button:nth-child(5):hover .icon {
     background: #ff0000;
   }
-
   header .navbar .wrapper .button .icon i {
     font-size: 15px;
     line-height: 30px;
     transition: all 0.3s ease-out;
   }
-
   header .navbar .wrapper .button:hover .icon i {
     color: rgb(255, 255, 255);
   }
-
   header .navbar .wrapper .button span {
     font-size: 15px;
     font-weight: 500;
@@ -669,89 +569,71 @@ header label {
     margin-left: 10px;
     transition: all 0.3s ease-out;
   }
-
   header .navbar .wrapper .button:nth-child(1) span {
     color: #4267B2;
   }
-
   header .navbar .wrapper .button:nth-child(2) span {
     color: #1DA1F2;
   }
-
   header .navbar .wrapper .button:nth-child(3) span {
     color: #E1306C;
   }
-
   header .navbar .wrapper .button:nth-child(4) span {
     color: #333;
   }
-
   header .navbar .wrapper .button:nth-child(5) span {
     color: #ff0000;
   }
-
   header label {
     display: initial;
   }
-
   header nav.ShowNavigation {
     display: initial;
     transition: all 0.3s ease-in-out;
   }
-
   header .burgeur {
     display: initial;
     position: absolute;
     right: 0;
     padding-right: 14%;
   }
-
   header .burgeur i {
     position: absolute;
     left: 0;
     height: 100%;
   }
-
   header .burgeur .OpenMenu.show {
     display: block;
   }
-
   header .burgeur .OpenMenu.hide {
     display: none;
   }
-
   header .burgeur .CancelMenu.show {
     display: block;
   }
-
   header .burgeur .CancelMenu.hide {
     display: none;
   }
 }
-
 .a_propos {
   margin-top: 40px;
   width: 100%;
   height: 500px;
 }
-
 .a_propos h1 {
   text-align: center;
   font-size: 25px;
   color: #000;
 }
-
 .a_propos .contain_propos {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .a_propos .contain_left {
   width: 50%;
   height: 100%;
 }
-
 .a_propos .contain_right {
   width: 50%;
   height: 100%;
@@ -824,7 +706,6 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-
 .send-button:hover {
   background: #a1470f;
 }
@@ -970,110 +851,89 @@ hr {
   .copyright {
     color: white;
   }
-
   .contact-wrapper {
     display: flex;
     flex-direction: column;
   }
-
   .direct-contact-container,
-  .form-horizontal {
+.form-horizontal {
     margin: 0 auto;
   }
-
   .direct-contact-container {
     margin-top: 60px;
     max-width: 300px;
   }
-
   .social-media-list li {
     height: 60px;
     width: 60px;
     line-height: 60px;
   }
-
   .social-media-list li:after {
     width: 60px;
     height: 60px;
     line-height: 60px;
   }
 }
-
 @media screen and (max-width: 569px) {
-
   .direct-contact-container,
-  .form-wrapper {
+.form-wrapper {
     float: none;
     margin: 0 auto;
   }
-
   .form-group {
     width: 100%;
   }
-
   .group-form-control {
     width: 100%;
   }
-
   .form-control,
-  textarea {
+textarea {
     width: 100%;
     margin: 0 auto;
   }
-
   .form-control-only {
     margin-bottom: 10px;
     width: 100%;
   }
-
   .name,
-  .email,
-  textarea {
+.email,
+textarea {
     width: 280px;
   }
-
   .direct-contact-container {
     margin-top: 60px;
     max-width: 280px;
   }
-
   .social-media-list {
     left: 0;
     font-size: 12px;
   }
-
   .social-media-list li {
     height: 25px;
     width: 25px;
     line-height: 25px;
     font-size: 12px;
   }
-
   .list-item {
     font-size: 10px;
   }
-
   .social-media-list li:after {
     width: 55px;
     height: 55px;
     line-height: 55px;
   }
 }
-
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%;
   }
 }
-
 .form-group {
   max-width: 400px;
 }
-
 .form-group .group-form-control {
   max-width: 400px;
 }
-
 .form-group .group-form-control .form-control {
   max-width: 400px;
   width: 400px;
@@ -1083,15 +943,11 @@ hr {
   .form-group {
     max-width: 400px;
   }
-
   .form-group .group-form-control {
     max-width: 400px;
   }
-
   .form-group .group-form-control .form-control {
     max-width: 400px;
     width: 100%;
   }
-}
-
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */
