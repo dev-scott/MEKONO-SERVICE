@@ -1,523 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mokono service</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css"
-        integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
-        integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- font icons -->
 
-
-    <!-- <link rel="stylesheet" href="./css/home.css"> -->
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css"
-        integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
-        integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <link rel="stylesheet" href="leadmark/public_html/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css"> -->
+    <!-- Bootstrap + LeadMark main styles -->
+    <link rel="stylesheet" href="leadmark/public_html/assets/css/leadmark.css">
+	<!-- <link rel="stylesheet" href="assets/css/leadmark.css"> -->
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-<body>
-    <header>
-        <h1>
-
-            <a href="#" class="logo"> <img src="./Assets/img/logoHi.png" alt=""> <span class="consulte"> HI </span>
-                CONSULTING
-                IMMIGRATION
-                <span></span></a>
-        </h1>
-
-        <!-- 
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">menu</label> -->
-        <div class="burgeur">
-            <i class="fa-solid fa-bars OpenMenu show"></i>
-            <i class="fa-solid fa-xmark CancelMenu hide"></i>
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logoHi.png" alt=""> <span class="consulte"> HI</span>CONSULTING
+                IMMIGRATION<span></span></a>
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Nos service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Apropos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Actualité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <!-- End Of Second Navigation -->
 
-        <nav class="navbar">
-            <ul>
-
-
-
-                <li><a href="#home">Home</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#a_propos">A propos</a></li>
-                <li><a href="#destination">Destination</a>
-
-
-
-                </li>
-                <li><a href="#contact">contact</a></li>
-
-
-
-            </ul>
-
-            <div class="wrapper">
-
-                <div class="button">
-                    <div class="icon">
-                        <i class='fab fa-facebook-f'></i>
-                    </div>
-                    <span> <a href="https://www.facebook.com/hiconsultingimmigration/">Facebook </a></span>
-
-                </div>
-                <div class="button">
-                    <div class="icon">
-                        <i class='fab fa-twitter'></i>
-                    </div>
-                    <span>Twitter</span>
-
-                </div>
-                <div class="button">
-                    <div class="icon">
-                        <i class='fab fa-instagram'></i>dd
-                    </div>
-                    <span>Instagram</span>
-
-                </div>
-                <div class="button">
-                    <div class="icon">
-                        <i class='fab fa-codepen'></i>
-                    </div>
-                    <span>Codepen</span>
-
-                </div>
-                <div class="button">
-                    <div class="icon">
-                        <i class='fab fa-youtube'></i>
-                    </div>
-                    <span>Youtube</span>
-
-                </div>
-            </div>
-
-
-            <div class="language">
-                En
-                <!-- <span>
-                    <i class="fa-solid fa-caret-down"></i>
-                </span> -->
-            </div>
-
-        </nav>
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle">Bienvevue chez Hiconsulting-immigration</h1>
+            <h1 class="title"><span>HI</span>CONSULTING-IMMIGRATION</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
     </header>
-
-
-
-    <div class="home" id="home">
-        <div class="flou"></div>
-        <div class="home_text">
-
-            <h1> <span class="consulte"> HI </span> <span class="contain_consulting"> CONSULTING IMMIGRATION... </span>
-                VOTRE
-                ENTREPRISE D'ACCOMPAGNEMENT VISA
-                <br> AU CAMEROUN
-            </h1>
-            <div class="button">
-                <button> <a href="mailto:Hi.Consultingimmigration@Gmail.Com"> Contactez nous </a></button>
-                <!-- <button>View pricing</button> -->
-
-            </div>
-
-        </div>
-        <div class="home_img">
-            <div>
-
-                <img src="./Assets/img/bg-img/home-img.png" alt="banniere">
-
-            </div>
-
-        </div>
-
-
-
-    </div>
-
-    <div class="story" id="service">
-        <div class="left_top">
-            <div class="contain_left-top">
-
-                <span> Nos services </span>
-                <h1>Avez vous choisis votre destination? Les preparatifs de votre projet voyage commencent...
-                </h1>
-
-
-            </div>
-
-
-        </div>
-        <div class="left_middle">
-            <div class="contain_left-middle">
-
-                <div> </div>
-
-
-            </div>
-
-
-        </div>
-
-        <div class="left_bottom">
-
-            <div class="contain_left-bottom">
-
-                <div class="figure">
-                    <div><img src="./Assets/img/bg-img/visage.png" alt=""></div>
-                </div>
-                <div class="contain_bottom_text">
-                    <p>Choisi, préparatifs, projet de voyage commencent maintenant..., un véritable service
-                        d'accompagnement, vous déplacer, </p>
-                </div>
-
-            </div>
-
-
-
-
-
-        </div>
-
-        <div class="right_top">
-            <div class="contain_right-top">
-                <div class="chiffre">01.</div>
-                <div class="other">
-                    <h1>Demande De Visas</h1>
-                    <p>Nous vous accompagnons dans tout votre processus pour l'obtention de votre visa
-
-
-                    </p>
-                </div>
-            </div>
-
-        </div>
-        <div class="right_middle">
-            <div class="contain_right-middle">
-                <div class="chiffre">02.</div>
-                <div class="other">
-                    <h1>Reservation De Vol</h1>
-                    <p>Un vol international pour rejoindre votre destination? Notre partenaire se charge <br> de tout et
-                        vous offre des avantages
-                        exclusifs.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="right_bottom">
-            <div class="contain_right-bottom">
-                <div class="chiffre">03.</div>
-                <div class="other">
-                    <h1>Cours d'anglais</h1>
-                    <p>Dans le soucis d'une insertion plus rapide, nous vous offrons des services de cours
-                        d'anglais intensifs</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="mission" id="mission">
-        <div class="hover"></div>
-        <div class="card_mission">
-
-            <div class="card">
-                <div>
-
-                    <h1>Notre mission</h1>
-                    <p>A la carte depuis l'assistance à l'obtention de votre visa jusqu'à la réservation de vol et
-                        bien plus encore.</p>
-
-                </div>
-            </div>
-            <ul class="satifaction">
-                <li>
-                    <h1>94%</h1> <span> CLIENT SATISFAIT</span>
-                </li>
-                <li>
-                    <h1>70M+</h1> <span>SORTIE DE VISA</span>
-                </li>
-                <li>
-                    <h1>10k+</h1> <span>REUSSIT</span>
-                </li>
-            </ul>
-
-        </div>
-        <div class="image_mission">
-
-            <div>
-                <img src="./Assets/img/bg-img/ff.png" alt="banniere">
-            </div>
-
-        </div>
-
-    </div>
-    <div class="vision" id="a_propos">
-
-        <div class="image_mission">
-            <div>
-                <img src="./Assets/img/Banner.png" alt="banniere">
-
-            </div>
-        </div>
-
-        <div class="card_mission">
-
-            <div class="card">
-                <div>
-
-                    <h1>A propos de nous</h1>
-                    <p>Nous sommes une société enregistrée avec une force de frappe qui s'étant sur plusieurs pays en
-                        Afrique, en
-                        Europe et en Amérique.
-                        Nous apportons une
-                        assistance Professionnelle aux personnes souhaitant immigrer a l'étranger. Nous travaillons en
-                        parteneriat avec plus de
-                    </p>
-
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <p> 170 pays dans le monde, nous vous offrons de nombreuses opportunités tels que vivre,etudier et
-                        travailler a l'etranger
-                        dans les pays de votre choix. </p>
-
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-
-    </div>
-
-    <div class="about" id="destination">
-        <h1> Choisissez votre destination</br>selon vos besoin
-            <span class="boule1"></span>
-            <span class="boule2"></span>
-        </h1>
-
-
-
-        <div class="box">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="Assets/img/bg-img/BULGARIE1111 - Copie (2).jfif" alt="images">
-                </div>
-                <div class="details">
-                    <h2>Canada</h2>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="./Assets/img/bg-img/belgique.jpg" alt="images">
-                </div>
-                <div class="details">
-                    <h2>Belgique<br></h2>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgBx">
-                    <img src="./Assets/img/bg-img/angleterre.....jpg" alt="images">
-                </div>
-                <div class="details">
-                    <h2>France</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="Assets/img/bg-img/canada.jpg" alt="images">
-                </div>
-                <div class="details">
-                    <h2>Italie</h2>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="imgBx">
-                    <img src="Assets/img/bg-img/Belg.jpg" alt="images">
-                </div>
-                <div class="details">
-                    <h2>Espagne</h2>
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-    </div>
-
-    <div class="contact" id="contact">
-
-        <h1 class="contact-header"></h1>
-
-        <div class="contact-wrapper">
-
-            <!-- left contact group -->
-
-            <form id="contact-form" class="form-horizontal" role="form" action="">
-
-                <div class="form-group">
-                    <div class="group-form-control">
-                        <input type="text" name="name" id="name" class="form-control form-control-only"
-                            placeholder="Name" value="" required>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">Nos Service</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">01</small>
+                            <h5 class="card-title mt-3"> LE PERMIS DE TRAVAIL <h5>
+                            <p class="mb-0">Le permis de travail canadien ou visa de travail est délivré aux personnes éligibles à l’étranger 
+                                pour travailler dans ce pays pendant une période de temps spécifique, ce permis de travail 
+                                peut être demandé uniquement après avoir reçu une offre d’emploi ou un contrat de travail 
+                                d’un employeur canadien.</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <div class="group-form-control">
-                        <input type="email" name="name" id="email" class="form-control form-control-only"
-                            placeholder="Email" value="" required>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">02</small>
+                            <h5 class="card-title mt-3">LE PERMIS D’ETUDES<h5>
+                            <p class="mb-0">Un visa étudiant est un document officiel délivré par des services de l’immigration du Canada 
+                                et qui permet aux ressortissants étrangers d’étudier au Canada pendant une certaine période 
+                                bien déterminée.
+                                A ce niveau l’étudiant étranger qui demande un permis d’études doit s’assurer qu’il détient en 
+                                main tous les documents nécessaires avant de se présenter.</p>
+                        </div>
                     </div>
                 </div>
-
-                <textarea name="message" class="form-control" placeholder="Message" rows="10" required></textarea>
-
-                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                    <div class="alt-send-button">
-                        <span class="send-text">SEND</span>
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">03</small>
+                            <h5 class="card-title mt-3"> LA RESIDENCE PERMANENTE <h5>
+                            <p class="mb-0">Un résident permanent est une personne qui a obtenu le statut de résident permanent en 
+                                immigrant au Canada, mais qui n’est pas encore citoyen canadien.</p>
+                        </div>
                     </div>
-
-                </button>
-
-            </form>
-
-            <div class="direct-contact-container">
-
-                <ul class="contact-list">
-                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">logpom
-                            </span></i></li>
-                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                                    href="tel:1-212-555-5555" title="Give me a call">(+237) 693 317 880</a></span></i>
-                    </li>
-
-                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                                    href="mailto:Hi.Consultingimmigration@Gmail.Com"
-                                    title="Send me an email">hi.consultingimmigration@gmail.com</a></span></i></li>
-
-                </ul>
-                <hr>
-
-                <ul class="social-media-list">
-                    <li><a href="https://www.facebook.com/hiconsultingimmigration/" target="_blank"
-                            class="contact-icon">
-                            <i class='fab fa-facebook-f'></i>
-                        </a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class='fab fa-twitter'></i> </a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class='fab fa-instagram'></i> </a>
-                    </li>
-                    <li><a href="#" target="_blank" class="contact-icon">
-                            <i class='fab fa-codepen'></i>
-
-                        </a>
-                    </li>
-                </ul>
-
-                <hr>
-
-                <!-- <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div> -->
-
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <h3>HI CONSULTING <span>IMMIGRATION</span></h3>
-
-            <p class="footer-links">
-                <a href="#">Home</a>
-                |
-                <a href="#">About</a>
-                |
-                <a href="#">Contact</a>
-                |
-                <a href="#">Blog</a>
-            </p>
-
-            <p class="footer-company-name">Copyright © 2022 <strong>HI-CONSULTING-IMMIGRATION</strong> Tout droit reserv
-            </p>
-        </div>
-
-        <div class="footer-center">
-
-            <h3 class="about_company"> About Company</h3>
-
-            <p class="about_paragraphe">HI CONSULTING IMMIGRATION - cameroun douala</p>
-
-            <div class="TwoButton">
-
-                <button class="btn_1">More infos</button>
-                <button class="btn_2">Contact us</button>
-
+                </div> 
+                <div class="col-md-4">
+                    <div class="card mb-4 mb-md-0">
+                        <div class="card-body">
+                            <small class="text-primary font-weight-bold">04</small>
+                            <h5 class="card-title mt-3">LE PERMIS VISITEUR. <h5>
+                            <p class="mb-0">Un visa visiteur (aussi appelé visa de résident temporaire) est un document officiel que les 
+                                citoyens des pays visés par l’obligation de visa doivent obtenir pour pouvoir voyager et entrer 
+                                au CANADA à titre de visiteurs pendant une période de plus de six mois.
+                                </p>
+                        </div>
+                    </div>
+                </div>               
             </div>
         </div>
+    </section>
+    <!-- End OF Service Section -->
 
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">Apropos de nous</h6>
+                    <p >Nous sommes une société enregistrée avec une force de frappe qui s'étant sur plusieurs pays en Afrique, en Europe et en Amérique. Nous apportons une assistance Professionnelle aux personnes souhaitant immigrer a l'étranger. Nous travaillons en parteneriat avec plus de
 
+                        170 pays dans le monde, nous vous offrons de nombreuses opportunités tels que vivre,etudier et travailler a l'etranger dans les pays de votre choix.!</p>
+                    <img src="ETU_img.jpeg" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="ET.jpeg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="about-2.jpg" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <h2>Notre mission</h2>
+                            <p><b>A la carte depuis l'assistance à l'obtention de votre visa jusqu'à la réservation de vol et bien plus encore.</b><br>
+                            </p>
+                            <p>Nous vous accompagnons dans tout votre processus pour l'obtention de votre visa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->
 
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                <strong>HI CONSULTING IMMIGRATION</strong> HI CONSULTING IMMIGRATION...VOTRE ENTREPRISE D'ACCOMPAGNEMENT
-                VISA AU CAMEROUN
-
-            </p>
-            <div class="footer-icons">
-                <a href="https://www.facebook.com/hiconsultingimmigration/"><i class='fab fa-facebook-f'></i>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">Actualité</h6>
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    New
                 </a>
-                <a href="#"><i class='fab fa-instagram'></i></a>
-                <a href="#"><i class='fab fa-twitter'></i></a>
-                <a href="#"><i class='fab fa-codepen'></i>
+                <a href="#" data-filter=".advertising">
+                    Advertising
+                </a>
+                <a href="#" data-filter=".branding">
+                    Branding
+                </a>
+                <a href="#" data-filter=".web">
+                    Web
                 </a>
             </div>
-        </div>
+            <div class="portfolio-container"> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="IMG11.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG00.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="IMG0.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG0.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>                         
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="IMG16.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG16.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="img1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="img1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
 
-    </footer>
+                <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="portfolio-item">
+                        <img src="IMG11.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG11.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="IMG8.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                       <div class="content-holder">
+                            <a class="img-popup" href="IMG8.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="IMG7.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                       <div class="content-holder">
+                            <a class="img-popup" href="IMG8.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="portfolio-item">
+                        <img src="IMG6.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG6.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="IMG5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG5.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="IMG4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="IMG3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="IMG16.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG16.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                      
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="IMG14.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                        <div class="content-holder">
+                            <a class="img-popup" href="IMG14.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                   
+                </div>
+            </div>   
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">Nos Destinations</h6>
+            <h6 class="section-subtitle mb-5 text-center">Avez vous choisis votre destination? Les preparatifs de votre projet voyage commencent...</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="Canada1.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">CANADA</h6>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="belgique.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title"> FRANCE</h5>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="Allemagne.....jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">BELGIQUE</h6>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    <section class="section" id="testmonial">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">TEMOIGNAGE</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="ET0.jpeg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">jean Ateba</h6>
+                                    <small class="text-muted mb-0">Etudiant u canada</small>     
+                                </div>
+                            </div>
+                            <p class="mb-0">je vous recommande pleinement Hiconsulting-immigration, ils sont les meilleurs dans leurs domaine</p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="ET1.jpeg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Martin Mbah</h6>
+                                    <small class="text-muted mb-0">Travailleur qualifier</small>      
+                                </div>
+                            </div>
+                            <p class="mb-0">Merci Hiconsulting-immigration! 
+                                les meilleurs conseillers en immigration au cameroun
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img class="mr-3" src="ET2.jpeg" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">Mason Miller</h6>
+                                    <small class="text-muted mb-0">Resident permanent </small>        
+                                </div>
+                            </div>
+                            <p class="mb-0">Le meilleurs cabinet d'immigration au cameroun!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Testmonial Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Phone</h6>
+                    <p class="mb-4">(+237) 693 317 880</p>
+
+                    <h6 class="mb-0">Address</h6>
+                    <p class="mb-4">Carefour Bassong</p>
+
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">Hi.Consultingimmigration@Gmail.Com</p>
+                    
+                    <p></p>
+                </div>
+                <div class="col-md-7">
+                    <form>
+                        <h4 class="mb-4">Contacter Nous</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message"></textarea>
+
+                            </div>
+                            <div class="form-group col-12 mb-0">
+                                <a href="mailto:Hi.Consultingimmigration@Gmail.Com"><button type="submit" class="btn btn-primary rounded w-md mt-3">Send</button></a>
+                            </div>                          
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, LeadMark Created By <a href="https://www.devcrud.com" target="_blank">DevCrud.</a>  All rights reserved </p>     
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    
+    <script src="leadmark/public_html/assets/vendors/jquery/jquery-3.4.1.js" ></script>
+    <!-- <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script> -->
+
+    <script src="leadmark/public_html/assets/vendors/bootstrap/bootstrap.bundle.js" ></script>
+
+    <!-- bootstrap 3 affix -->
+	<!-- <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script> -->
+
+    <script src="leadmark/public_html/assets/vendors/bootstrap/bootstrap.affix.js" ></script>
+
+    <!-- Isotope -->
+    <!-- <script src="assets/vendors/isotope/isotope.pkgd.js"></script> -->
+
+    <script src="leadmark/public_html/assets/vendors/isotope/isotope.pkgd.js" ></script>
+
+    <!-- LeadMark js -->
+    <!-- <script src="assets/js/leadmark.js"></script> -->
+    <script src="leadmark/public_html/assets/js/leadmark.js" ></script>
 
 </body>
-
-<script src="./js/main.js"></script>
-
 </html>
